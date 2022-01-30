@@ -1,82 +1,115 @@
 import Head from 'next/head'
+import { motion } from 'framer-motion'
+import { BsLinkedin } from 'react-icons/bs'
+import { BsGithub } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
+import { BsInstagram } from 'react-icons/bs'
 
 export default function Home() {
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  }
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Talha Zulfiqar | Web Developer</title>
       </Head>
+      <div className="h-16 border">
+        <div className="flex">
+          <motion.div
+            animate={{ x: 30 }}
+            transition={{ type: 'spring', stiffness: 50 }}
+          >
+            <img
+              src="img2.jpg"
+              style={{ width: '35px', height: '35px' }}
+              className=" mt-3 rounded-full border-2 border-solid border-stone-400 object-cover pt-2"
+            />
+          </motion.div>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
+          <motion.div
+            animate={{ x: 30 }}
+            transition={{ type: 'spring', stiffness: 50 }}
+          >
+            <h1 className="ml-2 mt-4 cursor-pointer font-sans text-lg font-medium text-stone-600 hover:text-cyan-500">
+              Talha Zulfiqar
+            </h1>
+          </motion.div>
+        </div>
+
+        <motion.div
+          animate={{ x: -30 }}
+          transition={{ type: 'spring', stiffness: 50 }}
+        >
+          <a
+            href="https://www.linkedin.com/in/talha-916837185/"
+            target="_blank"
+          >
+            <BsLinkedin className="float-right -mt-7 mr-2 text-2xl" />
           </a>
-        </h1>
+        </motion.div>
+      </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
+      <div className="bgcolorful flex min-h-screen flex-col items-center  py-2">
+        <motion.div
+          animate={{ y: 50 }}
+          transition={{ type: 'spring', stiffness: 50 }}
+        >
+          <img
+            className="circle bg-pk rounded-full border-4 border-stone-400 object-cover pt-2"
+            src="img2.jpg"
+            style={{ width: '200px', height: '200px' }}
+          />
+        </motion.div>
+
+        <span className="mt-16 font-sans text-3xl font-medium text-stone-600">
+          TalHa Zulfiqar | Web Developer
+        </span>
+
+        <p className="text-1xl mt-2 font-sans text-stone-600">
+          Hi, I am Mern Stack Developer, Learn new technologies is my passion,
         </p>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+        <p className="text-1xl font-sans text-stone-600">
+          Reactjs | Expressjs | Nodejs
+        </p>
+        <p className="text-1xl font-sans text-stone-600">
+          📫 How to reach me: Muhammadtalha6063@gmail.com.
+        </p>
+        <p className="text-1xl font-sans text-stone-600">
+          👯 I’m looking to collaborate on any new project.
+        </p>
+        <p className="text-1xl font-sans text-stone-600">
+          💬 Ask me about any web application technologies.
+        </p>
+        <p className="text-1xl font-sans text-stone-600">
+          ⚡ Currently Working on Blockchain Project.
+        </p>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
+          animate={{ y: -50 }}
+          transition={{ type: 'spring', stiffness: 50 }}
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="ml-2 h-4" />
-        </a>
-      </footer>
-    </div>
+          <div className="mt-16 flex gap-10 text-2xl ">
+            <a href="https://github.com/talhahere0" target="_blank">
+              <BsGithub className="hover:scale-150" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/talha-916837185/"
+              target="_blank"
+            >
+              <BsLinkedin className="hover:scale-150" />
+            </a>
+            <a href="https://instagram.com/codewithtalha/" target="_blank">
+              <BsInstagram className="hover:scale-150" />
+            </a>
+            <a href="https://twitter.com/talha_dev1/" target="_blank">
+              <BsTwitter className="hover:scale-150" />
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </>
   )
 }
