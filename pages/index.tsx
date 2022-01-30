@@ -24,7 +24,7 @@ export default function Home() {
             <img
               src="img2.jpg"
               style={{ width: '35px', height: '35px' }}
-              className=" mt-3 rounded-full border-2 border-solid border-stone-400 object-cover pt-2"
+              className=" mt-3 rounded-full border-2 border-solid border-cyan-500 object-cover pt-2"
             />
           </motion.div>
 
@@ -51,7 +51,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div className="bgcolorful flex min-h-screen flex-col items-center  py-2">
+      <div className="colorful flex min-h-screen flex-col items-center  py-2">
         <motion.div
           animate={{ y: 30 }}
           transition={{ type: 'spring', stiffness: 50 }}
