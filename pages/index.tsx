@@ -53,37 +53,42 @@ export default function Home() {
 
       <div className="bgcolorful flex min-h-screen flex-col items-center  py-2">
         <motion.div
-          animate={{ y: 50 }}
+          animate={{ y: 30 }}
           transition={{ type: 'spring', stiffness: 50 }}
         >
-          <img
-            className="circle bg-pk rounded-full border-4 border-stone-400 object-cover pt-2"
-            src="img2.jpg"
+          <div
             style={{ width: '200px', height: '200px' }}
-          />
+            className="gradientborders rounded-full object-cover p-1"
+          >
+            <img
+              src="img2.jpg"
+              className="rounded-full"
+              style={{ width: '100%', height: '100%' }}
+            />
+          </div>
         </motion.div>
 
-        <span className="mt-16 font-sans text-3xl font-medium text-stone-600">
+        <span className="mt-10 font-sans font-medium text-stone-600 sm:text-lg md:text-3xl">
           TalHa Zulfiqar | Web Developer
         </span>
 
-        <p className="text-1xl mt-2 font-sans text-stone-600">
+        <p className="mt-2 text-center font-sans text-stone-600 sm:text-sm md:text-lg">
           Hi, I am Mern Stack Developer, Learn new technologies is my passion,
         </p>
 
-        <p className="text-1xl font-sans text-stone-600">
+        <p className=" text-center font-sans font-semibold text-stone-600 sm:text-sm md:text-lg">
           Reactjs | Expressjs | Nodejs
         </p>
-        <p className="text-1xl font-sans text-stone-600">
+        <p className="mt-2 text-center font-sans text-stone-600 sm:text-sm md:text-lg">
           📫 How to reach me: Muhammadtalha6063@gmail.com.
         </p>
-        <p className="text-1xl font-sans text-stone-600">
+        <p className="mt-2 text-center font-sans text-stone-600 sm:text-sm md:text-lg">
           👯 I’m looking to collaborate on any new project.
         </p>
-        <p className="text-1xl font-sans text-stone-600">
+        <p className="mt-2 text-center font-sans text-stone-600 sm:text-sm md:text-lg">
           💬 Ask me about any web application technologies.
         </p>
-        <p className="text-1xl font-sans text-stone-600">
+        <p className="mt-2 text-center font-sans text-stone-600 sm:text-sm md:text-lg">
           ⚡ Currently Working on Blockchain Project.
         </p>
 
