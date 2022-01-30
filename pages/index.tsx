@@ -21,11 +21,16 @@ export default function Home() {
             animate={{ x: 30 }}
             transition={{ type: 'spring', stiffness: 50 }}
           >
-            <img
-              src="img2.jpg"
-              style={{ width: '35px', height: '35px' }}
-              className=" mt-3 rounded-full border-2 border-solid border-cyan-500 object-cover pt-2"
-            />
+            <div
+              style={{ width: '40px', height: '40px' }}
+              className="rounded-full p-1"
+            >
+              <img
+                src="img1.jpg"
+                style={{ width: '100%', height: '100%' }}
+                className=" mt-3 rounded-full border-2 border-solid border-cyan-500 object-cover"
+              />
+            </div>
           </motion.div>
 
           <motion.div
@@ -58,11 +63,11 @@ export default function Home() {
         >
           <div
             style={{ width: '200px', height: '200px' }}
-            className="gradientborders rounded-full object-cover p-1"
+            className="gradientborders rounded-full p-1"
           >
             <img
-              src="img2.jpg"
-              className="rounded-full"
+              src="img1.jpg"
+              className="rounded-full object-cover"
               style={{ width: '100%', height: '100%' }}
             />
           </div>
